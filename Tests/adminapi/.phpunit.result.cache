@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":268:{a:2:{s:7:"defects";a:2:{s:31:"adminapiTest::test_verifyAPIKey";i:4;s:34:"adminapiTest::test_getlocationLogs";i:4;}s:5:"times";a:3:{s:31:"adminapiTest::test_verifyAPIKey";d:0.001;s:26:"adminapiTest::test_getCars";d:0.001;s:34:"adminapiTest::test_getlocationLogs";d:0;}}}

@@ -1,0 +1,70 @@
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+        height: 100%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+    <script>
+// Initialize and add the map
+function initMap() {
+  const marker = { lat: 54.602436, lng: -5.921604 };
+  const marker2 = { lat: 54.601436, lng: -5.941604 };
+  const marker3 = { lat: 54.663811, lng: -5.667494 };
+  const marker4 = { lat: 54.626767, lng: -5.913112 };
+  const marker5 = { lat: 54.602641, lng: -5.921452 };
+  const marker6 = { lat: 54.6059, lng: -5.910151 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: marker,
+  });
+
+  new google.maps.Marker({
+    position: marker,
+    map,
+    title: "Belfast City Centre",
+  });
+  new google.maps.Marker({
+    position: marker2,
+    map,
+    title: "Belfast Victoria Square",
+  });
+  new google.maps.Marker({
+    position: marker3,
+    map,
+    title: "Bangor",
+  });
+  new google.maps.Marker({
+    position: marker4,
+    map,
+    title: "Belfast Quayside",
+  });
+  new google.maps.Marker({
+    position: marker5,
+    map,
+    title: "Belfast Obel Towers",
+  });
+  new google.maps.Marker({
+    position: marker6,
+    map,
+    title: "Belfast Titanic Quarter",
+  });
+  
+}
+    </script>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+        async></script>

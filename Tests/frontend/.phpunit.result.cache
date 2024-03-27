@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":212:{a:2:{s:7:"defects";a:1:{s:42:"adminapiTest::test_userverifieddataCorrect";i:3;}s:5:"times";a:2:{s:42:"adminapiTest::test_userverifieddataCorrect";d:0.001;s:44:"adminapiTest::test_userverifieddataIncorrect";d:0;}}}
